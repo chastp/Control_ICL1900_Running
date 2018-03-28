@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="idmsDataSet" targetNamespace="http://tempuri.org/idmsDataSet.xsd" xmlns:mstns="http://tempuri.org/idmsDataSet.xsd" xmlns="http://tempuri.org/idmsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="idmsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="idmsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Control_ICL1904.Properties.Settings.GlobalReference.Default.idmsConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="buffersTableAdapter" GeneratorDataComponentClassName="buffersTableAdapter" Name="buffers" UserDataComponentName="buffersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.buffers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Buffer_Name`, `Buffer_Page`, `Buffer_Contains`, `Version` FROM `buffers`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="data_elementTableAdapter" GeneratorDataComponentClassName="data_elementTableAdapter" Name="data_element" UserDataComponentName="data_elementTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.data_element" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Data_Element`, `SYNONYMS`, `LIKE1`, `DESCRIPTION`, `created_date`, `use1`, `SYNONYMS2` FROM `data_element`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="device_mediaTableAdapter" GeneratorDataComponentClassName="device_mediaTableAdapter" Name="device_media" UserDataComponentName="device_mediaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.device_media" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Device_Media_Name`, `Description`, `IDMS_Schema`, `Version` FROM `device_media`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="elementsTableAdapter" GeneratorDataComponentClassName="elementsTableAdapter" Name="elements" UserDataComponentName="elementsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.elements" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Element_Name`, `Element_Description`, `user_name`, `Picture1`, `usage1` FROM `elements`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="entry_pointTableAdapter" GeneratorDataComponentClassName="entry_pointTableAdapter" Name="entry_point" UserDataComponentName="entry_pointTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.entry_point" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Entry_Point_name`, `IDMS_User` FROM `entry_point`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="files_namesTableAdapter" GeneratorDataComponentClassName="files_namesTableAdapter" Name="files_names" UserDataComponentName="files_namesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.files_names" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Files_Names`, `IDMS_Areas` FROM `files_names`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="files1TableAdapter" GeneratorDataComponentClassName="files1TableAdapter" Name="files1" UserDataComponentName="files1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.files1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `File_Name`, `File_Description_to`, `IDMS_User`, `Related_File`, `Labels`, `block_size`, `record_size`, `recording_mode` FROM `files1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="footer_pageTableAdapter" GeneratorDataComponentClassName="footer_pageTableAdapter" Name="footer_page" UserDataComponentName="footer_pageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.footer_page" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_FOOTER`, `Line_Index` FROM `footer_page`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="header_pageTableAdapter" GeneratorDataComponentClassName="header_pageTableAdapter" Name="header_page" UserDataComponentName="header_pageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.header_page" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Header` FROM `header_page`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="idms_areasTableAdapter" GeneratorDataComponentClassName="idms_areasTableAdapter" Name="idms_areas" UserDataComponentName="idms_areasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.idms_areas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Areas`, `Area_Type`, `Area_Name`, `Lowest_Page`, `Highest_Page`, `IDMS_Schema`, `Buffer_Name` FROM `idms_areas`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="idms_pageTableAdapter" GeneratorDataComponentClassName="idms_pageTableAdapter" Name="idms_page" UserDataComponentName="idms_pageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.idms_page" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Page`, `IDMS_Areas`, `IDMS_Header`, `IDMS_Records`, `IDMS_Line_No`, `IDMS_FOOTER` FROM `idms_page`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="journalTableAdapter" GeneratorDataComponentClassName="journalTableAdapter" Name="journal" UserDataComponentName="journalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.journal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Journal_Name`, `Journal_Buffer_name`, `Blocks`, `File_Name`, `Assign_to` FROM `journal`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="modulesTableAdapter" GeneratorDataComponentClassName="modulesTableAdapter" Name="modules" UserDataComponentName="modulesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.modules" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Name1`, `System1`, `Definition`, `Source1` FROM `modules`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="programsTableAdapter" GeneratorDataComponentClassName="programsTableAdapter" Name="programs" UserDataComponentName="programsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.programs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Name`, `Description`, `Entry_Point_name`, `IDMS_User`, `Record_Copied`, `Comments` FROM `programs`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="record_itemTableAdapter" GeneratorDataComponentClassName="record_itemTableAdapter" Name="record_item" UserDataComponentName="record_itemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.record_item" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Record_Name`, `Pointer`, `Data_Element`, `Record_Types` FROM `record_item`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="record_pageTableAdapter" GeneratorDataComponentClassName="record_pageTableAdapter" Name="record_page" UserDataComponentName="record_pageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.record_page" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Records`, `IDMS_Areas`, `Page_Number`, `Line_Number`, `Record_name`, `Record_Types` FROM `record_page`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="record_typesTableAdapter" GeneratorDataComponentClassName="record_typesTableAdapter" Name="record_types" UserDataComponentName="record_typesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.record_types" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Record_Types`, `Record_Name`, `Record_Identifier`, `Storage_Mode`, `Record_Length`, `Location_Mode`, `Duplicates_Option`, `Area_Name`, `Set_Type` FROM `record_types`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="recordsTableAdapter" GeneratorDataComponentClassName="recordsTableAdapter" Name="records" UserDataComponentName="recordsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.records" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Journal_Name`, `Journal_Buffer_name`, `Blocks`, `File_Name`, `Assign_to` FROM `records`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="schema1TableAdapter" GeneratorDataComponentClassName="schema1TableAdapter" Name="schema1" UserDataComponentName="schema1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.schema1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Schema`, `Name`, `Version`, `Prepared_By`, `Description` FROM `schema1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="set_typeTableAdapter" GeneratorDataComponentClassName="set_typeTableAdapter" Name="set_type" UserDataComponentName="set_typeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.set_type" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Set_Type`, `Owner_record_type`, `Member_Record_Type`, `Set_name`, `Linkage_Option`, `Membership_Option`, `Membership_Connection_Type`, `Order_Option`, `Duplicates_Option`, `Indexed_Sets` FROM `set_type`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="systemsTableAdapter" GeneratorDataComponentClassName="systemsTableAdapter" Name="systems" UserDataComponentName="systemsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.systems" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `System_Name`, `IDMS_Users`, `system_Description` FROM `systems`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usersTableAdapter" GeneratorDataComponentClassName="usersTableAdapter" Name="users" UserDataComponentName="usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="idmsConnectionString (Settings)" DbObjectName="idms.users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `IDMS_Users`, `User_Description`, `User_ID` FROM `users`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="idmsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="idmsDataSet" msprop:Generator_UserDSName="idmsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="buffers" msprop:Generator_TableClassName="buffersDataTable" msprop:Generator_TableVarName="tablebuffers" msprop:Generator_TablePropName="buffers" msprop:Generator_RowDeletingName="buffersRowDeleting" msprop:Generator_RowChangingName="buffersRowChanging" msprop:Generator_RowEvHandlerName="buffersRowChangeEventHandler" msprop:Generator_RowDeletedName="buffersRowDeleted" msprop:Generator_UserTableName="buffers" msprop:Generator_RowChangedName="buffersRowChanged" msprop:Generator_RowEvArgName="buffersRowChangeEvent" msprop:Generator_RowClassName="buffersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="data_element" msprop:Generator_TableClassName="data_elementDataTable" msprop:Generator_TableVarName="tabledata_element" msprop:Generator_TablePropName="data_element" msprop:Generator_RowDeletingName="data_elementRowDeleting" msprop:Generator_RowChangingName="data_elementRowChanging" msprop:Generator_RowEvHandlerName="data_elementRowChangeEventHandler" msprop:Generator_RowDeletedName="data_elementRowDeleted" msprop:Generator_UserTableName="data_element" msprop:Generator_RowChangedName="data_elementRowChanged" msprop:Generator_RowEvArgName="data_elementRowChangeEvent" msprop:Generator_RowClassName="data_elementRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="device_media" msprop:Generator_TableClassName="device_mediaDataTable" msprop:Generator_TableVarName="tabledevice_media" msprop:Generator_TablePropName="device_media" msprop:Generator_RowDeletingName="device_mediaRowDeleting" msprop:Generator_RowChangingName="device_mediaRowChanging" msprop:Generator_RowEvHandlerName="device_mediaRowChangeEventHandler" msprop:Generator_RowDeletedName="device_mediaRowDeleted" msprop:Generator_UserTableName="device_media" msprop:Generator_RowChangedName="device_mediaRowChanged" msprop:Generator_RowEvArgName="device_mediaRowChangeEvent" msprop:Generator_RowClassName="device_mediaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="elements" msprop:Generator_TableClassName="elementsDataTable" msprop:Generator_TableVarName="tableelements" msprop:Generator_TablePropName="elements" msprop:Generator_RowDeletingName="elementsRowDeleting" msprop:Generator_RowChangingName="elementsRowChanging" msprop:Generator_RowEvHandlerName="elementsRowChangeEventHandler" msprop:Generator_RowDeletedName="elementsRowDeleted" msprop:Generator_UserTableName="elements" msprop:Generator_RowChangedName="elementsRowChanged" msprop:Generator_RowEvArgName="elementsRowChangeEvent" msprop:Generator_RowClassName="elementsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="entry_point" msprop:Generator_TableClassName="entry_pointDataTable" msprop:Generator_TableVarName="tableentry_point" msprop:Generator_TablePropName="entry_point" msprop:Generator_RowDeletingName="entry_pointRowDeleting" msprop:Generator_RowChangingName="entry_pointRowChanging" msprop:Generator_RowEvHandlerName="entry_pointRowChangeEventHandler" msprop:Generator_RowDeletedName="entry_pointRowDeleted" msprop:Generator_UserTableName="entry_point" msprop:Generator_RowChangedName="entry_pointRowChanged" msprop:Generator_RowEvArgName="entry_pointRowChangeEvent" msprop:Generator_RowClassName="entry_pointRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="files_names" msprop:Generator_TableClassName="files_namesDataTable" msprop:Generator_TableVarName="tablefiles_names" msprop:Generator_TablePropName="files_names" msprop:Generator_RowDeletingName="files_namesRowDeleting" msprop:Generator_RowChangingName="files_namesRowChanging" msprop:Generator_RowEvHandlerName="files_namesRowChangeEventHandler" msprop:Generator_RowDeletedName="files_namesRowDeleted" msprop:Generator_UserTableName="files_names" msprop:Generator_RowChangedName="files_namesRowChanged" msprop:Generator_RowEvArgName="files_namesRowChangeEvent" msprop:Generator_RowClassName="files_namesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="files1" msprop:Generator_TableClassName="files1DataTable" msprop:Generator_TableVarName="tablefiles1" msprop:Generator_TablePropName="files1" msprop:Generator_RowDeletingName="files1RowDeleting" msprop:Generator_RowChangingName="files1RowChanging" msprop:Generator_RowEvHandlerName="files1RowChangeEventHandler" msprop:Generator_RowDeletedName="files1RowDeleted" msprop:Generator_UserTableName="files1" msprop:Generator_RowChangedName="files1RowChanged" msprop:Generator_RowEvArgName="files1RowChangeEvent" msprop:Generator_RowClassName="files1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="footer_page" msprop:Generator_TableClassName="footer_pageDataTable" msprop:Generator_TableVarName="tablefooter_page" msprop:Generator_TablePropName="footer_page" msprop:Generator_RowDeletingName="footer_pageRowDeleting" msprop:Generator_RowChangingName="footer_pageRowChanging" msprop:Generator_RowEvHandlerName="footer_pageRowChangeEventHandler" msprop:Generator_RowDeletedName="footer_pageRowDeleted" msprop:Generator_UserTableName="footer_page" msprop:Generator_RowChangedName="footer_pageRowChanged" msprop:Generator_RowEvArgName="footer_pageRowChangeEvent" msprop:Generator_RowClassName="footer_pageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="header_page" msprop:Generator_TableClassName="header_pageDataTable" msprop:Generator_TableVarName="tableheader_page" msprop:Generator_TablePropName="header_page" msprop:Generator_RowDeletingName="header_pageRowDeleting" msprop:Generator_RowChangingName="header_pageRowChanging" msprop:Generator_RowEvHandlerName="header_pageRowChangeEventHandler" msprop:Generator_RowDeletedName="header_pageRowDeleted" msprop:Generator_UserTableName="header_page" msprop:Generator_RowChangedName="header_pageRowChanged" msprop:Generator_RowEvArgName="header_pageRowChangeEvent" msprop:Generator_RowClassName="header_pageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="idms_areas" msprop:Generator_TableClassName="idms_areasDataTable" msprop:Generator_TableVarName="tableidms_areas" msprop:Generator_TablePropName="idms_areas" msprop:Generator_RowDeletingName="idms_areasRowDeleting" msprop:Generator_RowChangingName="idms_areasRowChanging" msprop:Generator_RowEvHandlerName="idms_areasRowChangeEventHandler" msprop:Generator_RowDeletedName="idms_areasRowDeleted" msprop:Generator_UserTableName="idms_areas" msprop:Generator_RowChangedName="idms_areasRowChanged" msprop:Generator_RowEvArgName="idms_areasRowChangeEvent" msprop:Generator_RowClassName="idms_areasRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="idms_page" msprop:Generator_TableClassName="idms_pageDataTable" msprop:Generator_TableVarName="tableidms_page" msprop:Generator_TablePropName="idms_page" msprop:Generator_RowDeletingName="idms_pageRowDeleting" msprop:Generator_RowChangingName="idms_pageRowChanging" msprop:Generator_RowEvHandlerName="idms_pageRowChangeEventHandler" msprop:Generator_RowDeletedName="idms_pageRowDeleted" msprop:Generator_UserTableName="idms_page" msprop:Generator_RowChangedName="idms_pageRowChanged" msprop:Generator_RowEvArgName="idms_pageRowChangeEvent" msprop:Generator_RowClassName="idms_pageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="journal" msprop:Generator_TableClassName="journalDataTable" msprop:Generator_TableVarName="tablejournal" msprop:Generator_TablePropName="journal" msprop:Generator_RowDeletingName="journalRowDeleting" msprop:Generator_RowChangingName="journalRowChanging" msprop:Generator_RowEvHandlerName="journalRowChangeEventHandler" msprop:Generator_RowDeletedName="journalRowDeleted" msprop:Generator_UserTableName="journal" msprop:Generator_RowChangedName="journalRowChanged" msprop:Generator_RowEvArgName="journalRowChangeEvent" msprop:Generator_RowClassName="journalRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="modules" msprop:Generator_TableClassName="modulesDataTable" msprop:Generator_TableVarName="tablemodules" msprop:Generator_TablePropName="modules" msprop:Generator_RowDeletingName="modulesRowDeleting" msprop:Generator_RowChangingName="modulesRowChanging" msprop:Generator_RowEvHandlerName="modulesRowChangeEventHandler" msprop:Generator_RowDeletedName="modulesRowDeleted" msprop:Generator_UserTableName="modules" msprop:Generator_RowChangedName="modulesRowChanged" msprop:Generator_RowEvArgName="modulesRowChangeEvent" msprop:Generator_RowClassName="modulesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="programs" msprop:Generator_TableClassName="programsDataTable" msprop:Generator_TableVarName="tableprograms" msprop:Generator_TablePropName="programs" msprop:Generator_RowDeletingName="programsRowDeleting" msprop:Generator_RowChangingName="programsRowChanging" msprop:Generator_RowEvHandlerName="programsRowChangeEventHandler" msprop:Generator_RowDeletedName="programsRowDeleted" msprop:Generator_UserTableName="programs" msprop:Generator_RowChangedName="programsRowChanged" msprop:Generator_RowEvArgName="programsRowChangeEvent" msprop:Generator_RowClassName="programsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="record_item" msprop:Generator_TableClassName="record_itemDataTable" msprop:Generator_TableVarName="tablerecord_item" msprop:Generator_TablePropName="record_item" msprop:Generator_RowDeletingName="record_itemRowDeleting" msprop:Generator_RowChangingName="record_itemRowChanging" msprop:Generator_RowEvHandlerName="record_itemRowChangeEventHandler" msprop:Generator_RowDeletedName="record_itemRowDeleted" msprop:Generator_UserTableName="record_item" msprop:Generator_RowChangedName="record_itemRowChanged" msprop:Generator_RowEvArgName="record_itemRowChangeEvent" msprop:Generator_RowClassName="record_itemRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="record_page" msprop:Generator_TableClassName="record_pageDataTable" msprop:Generator_TableVarName="tablerecord_page" msprop:Generator_TablePropName="record_page" msprop:Generator_RowDeletingName="record_pageRowDeleting" msprop:Generator_RowChangingName="record_pageRowChanging" msprop:Generator_RowEvHandlerName="record_pageRowChangeEventHandler" msprop:Generator_RowDeletedName="record_pageRowDeleted" msprop:Generator_UserTableName="record_page" msprop:Generator_RowChangedName="record_pageRowChanged" msprop:Generator_RowEvArgName="record_pageRowChangeEvent" msprop:Generator_RowClassName="record_pageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="record_types" msprop:Generator_TableClassName="record_typesDataTable" msprop:Generator_TableVarName="tablerecord_types" msprop:Generator_TablePropName="record_types" msprop:Generator_RowDeletingName="record_typesRowDeleting" msprop:Generator_RowChangingName="record_typesRowChanging" msprop:Generator_RowEvHandlerName="record_typesRowChangeEventHandler" msprop:Generator_RowDeletedName="record_typesRowDeleted" msprop:Generator_UserTableName="record_types" msprop:Generator_RowChangedName="record_typesRowChanged" msprop:Generator_RowEvArgName="record_typesRowChangeEvent" msprop:Generator_RowClassName="record_typesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="records" msprop:Generator_TableClassName="recordsDataTable" msprop:Generator_TableVarName="tablerecords" msprop:Generator_TablePropName="records" msprop:Generator_RowDeletingName="recordsRowDeleting" msprop:Generator_RowChangingName="recordsRowChanging" msprop:Generator_RowEvHandlerName="recordsRowChangeEventHandler" msprop:Generator_RowDeletedName="recordsRowDeleted" msprop:Generator_UserTableName="records" msprop:Generator_RowChangedName="recordsRowChanged" msprop:Generator_RowEvArgName="recordsRowChangeEvent" msprop:Generator_RowClassName="recordsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="schema1" msprop:Generator_TableClassName="schema1DataTable" msprop:Generator_TableVarName="tableschema1" msprop:Generator_TablePropName="schema1" msprop:Generator_RowDeletingName="schema1RowDeleting" msprop:Generator_RowChangingName="schema1RowChanging" msprop:Generator_RowEvHandlerName="schema1RowChangeEventHandler" msprop:Generator_RowDeletedName="schema1RowDeleted" msprop:Generator_UserTableName="schema1" msprop:Generator_RowChangedName="schema1RowChanged" msprop:Generator_RowEvArgName="schema1RowChangeEvent" msprop:Generator_RowClassName="schema1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="set_type" msprop:Generator_TableClassName="set_typeDataTable" msprop:Generator_TableVarName="tableset_type" msprop:Generator_TablePropName="set_type" msprop:Generator_RowDeletingName="set_typeRowDeleting" msprop:Generator_RowChangingName="set_typeRowChanging" msprop:Generator_RowEvHandlerName="set_typeRowChangeEventHandler" msprop:Generator_RowDeletedName="set_typeRowDeleted" msprop:Generator_UserTableName="set_type" msprop:Generator_RowChangedName="set_typeRowChanged" msprop:Generator_RowEvArgName="set_typeRowChangeEvent" msprop:Generator_RowClassName="set_typeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="systems" msprop:Generator_TableClassName="systemsDataTable" msprop:Generator_TableVarName="tablesystems" msprop:Generator_TablePropName="systems" msprop:Generator_RowDeletingName="systemsRowDeleting" msprop:Generator_RowChangingName="systemsRowChanging" msprop:Generator_RowEvHandlerName="systemsRowChangeEventHandler" msprop:Generator_RowDeletedName="systemsRowDeleted" msprop:Generator_UserTableName="systems" msprop:Generator_RowChangedName="systemsRowChanged" msprop:Generator_RowEvArgName="systemsRowChangeEvent" msprop:Generator_RowClassName="systemsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
