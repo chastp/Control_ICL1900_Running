@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Control_ICL1904
 {
     public partial class Form1 : Form
@@ -28,9 +29,9 @@ namespace Control_ICL1904
         private void Button2_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\Run_ICL1904_G3.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = " R Run_ICL1904_G3 ";
             string wrkdir1 = "c:\\em1904s\\bin";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -39,7 +40,6 @@ namespace Control_ICL1904
             try
             {
                 Process cmd = new Process();
-
                 cmd.StartInfo.FileName = ProcessName;
                 cmd.StartInfo.Arguments = args;
                 cmd.StartInfo.UseShellExecute = false;
@@ -63,9 +63,12 @@ namespace Control_ICL1904
             }
             catch (Exception ex)
             {
+                Simplelogger log1;
+                log1 = new Simplelogger();
                 string commandfile = ProcessName;
                 string filename = WrkDir + "\\" + cmdtxt;
-                txtmessage.Text = ex.Message + "(" + commandfile + filename + ")";
+                txtmessage.Text = ex.Message + "(" + commandfile + filename + " - " + args +  ")";
+                log1.Fatal(ex.Message + "(" + commandfile + filename + " - " + args + ")");
                 return "Error";
             }
 
@@ -74,9 +77,9 @@ namespace Control_ICL1904
         private void Button7_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\Run_ICL1904_G6.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = " R Run_ICL1904_G6 ";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -90,9 +93,9 @@ namespace Control_ICL1904
         private void Button5_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\bin\\printicltape.bat";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R printicltape ";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -100,9 +103,9 @@ namespace Control_ICL1904
         private void Button3_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\bin\\printdrdump.bat";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R printdrdump ";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -134,9 +137,9 @@ namespace Control_ICL1904
         private void Button6_Click_1(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\bin\\run_term.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R run_term ";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -154,9 +157,9 @@ namespace Control_ICL1904
         private void Button10_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\g3exec\\bin\\run.bat";
+            string cmd = "c:\\g3exec\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R run ";
             string wrkdir1 = "c:\\g3exec\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
 
@@ -208,9 +211,9 @@ namespace Control_ICL1904
         private void runICL1904G3SystemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\Run_ICL1904_G3.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R Run_ICL1904_G3";
             string wrkdir1 = "c:\\em1904s\\bin";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -218,9 +221,9 @@ namespace Control_ICL1904
         private void runICL1904G6SystemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\Run_ICL1904_G6.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R Run_ICL1904_G6";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
@@ -233,9 +236,9 @@ namespace Control_ICL1904
         private void loadVDUsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             string txtrun = "";
-            string cmd = "c:\\em1904s\\bin\\run_term.cmd";
+            string cmd = "c:\\em1904s\\RUN_ICL1900_Mainframe.exe";
             string process1 = "c:\\em1904s\\bin\\tcc.exe";
-            string arg = "";
+            string arg = "R run_term";
             string wrkdir1 = "c:\\em1904s\\bin\\";
             txtrun = ExecPro(process1, arg, wrkdir1, cmd);
         }
